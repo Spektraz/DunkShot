@@ -22,8 +22,8 @@ namespace Core.View
 
     public class EndGameController : Controller<EndGameView, IsAddScoreServiceLayer>
     {
-        private HowManyScoreServiceLayer howManyScoreServiceLayer;
-        private BestScoreSaveServiceLayer bestScoreSaveServiceLayer;
+        private readonly HowManyScoreServiceLayer howManyScoreServiceLayer;
+        private readonly BestScoreSaveServiceLayer bestScoreSaveServiceLayer;
         public EndGameController(EndGameView view) : base(view)
         {
             howManyScoreServiceLayer = ServiceFactory.GetService<HowManyScoreServiceLayer>();

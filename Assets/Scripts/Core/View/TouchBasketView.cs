@@ -1,5 +1,3 @@
-using System;
-using System.Numerics;
 using Core.AudioEntity.ServiceLayer;
 using Core.ServiceLayer;
 using MVC.Controller;
@@ -15,26 +13,24 @@ namespace Core.View
 {
    public class TouchBasketView : MVC.View.View, IDragHandler, IEndDragHandler
    {
-      [SerializeField] private BasketType basketType;
-      [SerializeField] private Image basketSprite;
-      [SerializeField] private Transform transformRot;
-      [SerializeField] private Transform startPos;
-      [SerializeField] private Rigidbody2D ball;
       [SerializeField] private AddScoreBasketView addScoreBasketView;
+      [SerializeField] private Rigidbody2D ball;
+      [SerializeField] private Transform transformRot;
+      [SerializeField] private Image basketSprite;
+      [SerializeField] private BasketType basketType;
       private IsAddScoreServiceLayer isAddScoreServiceLayer;
       private bool isSetRotate;
       private bool isInterpolation;
       private bool isShoot;
-
-      protected override void Start()
-      {
-         isAddScoreServiceLayer = ServiceFactory.GetService<IsAddScoreServiceLayer>();
-      }
       public void OnEnable()
       {
          ball = GameObject.FindGameObjectWithTag("Ball").GetComponent<Rigidbody2D>();// delete and refactor
       }
-
+      protected override void Start()
+      {
+         base.Start();
+         isAddScoreServiceLayer = ServiceFactory.GetService<IsAddScoreServiceLayer>();
+      }
       public void Update()
       {
          if (!isInterpolation) return;
@@ -83,8 +79,6 @@ namespace Core.View
          var basketSpriteTransform = basketSprite.transform;
          var transformLocalScale = basketSpriteTransform.localScale.y;
          transformLocalScale = transformLocalScale /1;
-         Debug.Log(eventData.pressPosition);
-         DrawTrajectory.Instance.HideLine();
          isInterpolation = true;
          ServiceFactory.GetService<EndDragServiceLayer>().UpdateDto(true);
          ServiceFactory.GetService<AttackBallServiceLayer>().UpdateDto(true);
@@ -93,7 +87,7 @@ namespace Core.View
          addScoreBasketView.isGoal = false;
       }
 
-      void Shoot(Vector3 force)
+      private void Shoot(Vector3 force)
       {
          if (isShoot)
             return;
@@ -105,7 +99,7 @@ namespace Core.View
          if (string.CompareOrdinal(other.tag, "EndRotate") == 0)
             isSetRotate = true;
       }
-      void OnTriggerExit2D(Collider2D other)
+      private void OnTriggerExit2D(Collider2D other)
       {
          if (string.CompareOrdinal(other.tag, "EndRotate") == 0)
             isSetRotate = false;
@@ -115,7 +109,7 @@ namespace Core.View
 
    public class TouchBasketController : Controller<TouchBasketView>
    {
-      public TouchBasketController(TouchBasketView view) : base(view)
+      public TouchBasketController(TouchBasketView view ): base(view)
       {
       }
 
@@ -126,6 +120,7 @@ namespace Core.View
       public override void RemoveListeners()
       {
       }
+      
    }
 
    public enum BasketType

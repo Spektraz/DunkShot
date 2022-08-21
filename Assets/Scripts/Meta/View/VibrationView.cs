@@ -1,6 +1,5 @@
 using System;
 using MVC.Controller;
-using MVC.View;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,7 +13,7 @@ namespace Meta.View
     public static AndroidJavaObject currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
     public static AndroidJavaObject vibrator = currentActivity.Call<AndroidJavaObject>("getSystemService", "vibrator");
 #else
-      public static AndroidJavaObject vibrator;
+      private static AndroidJavaObject vibrator;
 #endif
       [SerializeField] private Slider vibrationSlider;
 

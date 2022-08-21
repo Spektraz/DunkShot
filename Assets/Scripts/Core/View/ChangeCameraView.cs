@@ -1,4 +1,4 @@
-using System;
+
 using Core.AudioEntity.ServiceLayer;
 using Core.ServiceLayer;
 using MVC.Controller;
@@ -13,7 +13,7 @@ namespace Core.View
         [SerializeField] private Camera mainCamera;
         [SerializeField] private Camera gameCamera;
         [SerializeField] private Canvas gameCanvas;
-        [SerializeField] private Transform transform;
+        [SerializeField] private Transform mainTransform;
         [SerializeField] private Transform scorePos;
         [SerializeField] private Transform diamondPos;
         private bool state;
@@ -22,7 +22,7 @@ namespace Core.View
             var localPosition =  gameCamera.transform.localPosition;
             if (state)
             {
-                var position = transform.localPosition;
+                var position = mainTransform.localPosition;
                 var transform1 = scorePos.transform;
                 var position1 = transform1.localPosition;
                 var localPosition1 = diamondPos.transform.localPosition;

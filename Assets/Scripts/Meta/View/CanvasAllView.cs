@@ -79,7 +79,7 @@ namespace Meta.View
   }
   public class CanvasAllController : Controller<CanvasAllView, StartGameServiceLayer>
   {
-    private EndGameServiceLayer endGameServiceLayer;
+    private readonly EndGameServiceLayer endGameServiceLayer;
     public CanvasAllController(CanvasAllView view) : base(view)
     {
       endGameServiceLayer = ServiceFactory.GetService<EndGameServiceLayer>();

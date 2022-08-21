@@ -1,4 +1,3 @@
-using System;
 using Core.ServiceLayer;
 using MVC.Controller;
 using MVC.Factory;
@@ -11,14 +10,14 @@ namespace Core.View
         [SerializeField] private Rigidbody2D rigidbody2DBall;
         [SerializeField] private Transform startPos;
         [SerializeField] private Transform ballPos;
-        private void SetBall(string tag)
+        private void SetBall(string ballTag)
         {
-            if (string.CompareOrdinal(tag, "Point")==0)
+            if (string.CompareOrdinal(ballTag, "Point")==0)
             {
                 rigidbody2DBall.constraints = RigidbodyConstraints2D.FreezePositionY;
                 ballPos.localPosition =startPos.localPosition;
             }
-            else if (string.CompareOrdinal(tag, "Basket")==0)
+            else if (string.CompareOrdinal(ballTag, "Basket")==0)
             {
                 rigidbody2DBall.constraints = RigidbodyConstraints2D.None;
             }
@@ -26,7 +25,7 @@ namespace Core.View
 
         private void OnTriggerEnter2D(Collider2D col)
         {
-            ServiceFactory.GetService<EndDragServiceLayer>().UpdateDto(false);
+            Controller.Execute();
             SetBall(col.tag);
         }
 
@@ -47,6 +46,11 @@ namespace Core.View
         {
           
         }
-        
+
+        public override void Execute()
+        {
+            base.Execute();
+            ServiceFactory.GetService<EndDragServiceLayer>().UpdateDto(false);
+        }
     }
 }

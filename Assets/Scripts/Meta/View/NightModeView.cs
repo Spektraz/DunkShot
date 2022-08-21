@@ -1,7 +1,6 @@
 using System;
 using MVC.Controller;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Meta.View
@@ -10,6 +9,7 @@ namespace Meta.View
     {  
         [SerializeField] private Slider nightModeSlider;
         [SerializeField] private Camera mainCamera;
+        [SerializeField] private Camera gameCamera;
         public void AddListener(Action action)
         {
             nightModeSlider.onValueChanged.AddListener(delegate { action(); });
@@ -24,10 +24,12 @@ namespace Meta.View
             if (nightModeSlider.value == 1)
             {
                 mainCamera.backgroundColor = new Color(0.1f, 0.1f, 0.1f);
+                gameCamera.backgroundColor = new Color(0.1f, 0.1f, 0.1f);
             }
             if (nightModeSlider.value == 0)
             {
                 mainCamera.backgroundColor = Color.gray;
+                gameCamera.backgroundColor = Color.gray;
             }
         }
 

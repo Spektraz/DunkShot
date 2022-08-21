@@ -57,10 +57,8 @@
      <Compile Include="Assets\Scripts\BaseService\Thread\UnityMainThreadDispatcher.cs" />
      <Compile Include="Assets\Scripts\Core\View\ResetBallView.cs" />
      <Compile Include="Assets\Scripts\BaseService\ModelEntity\ModelService.cs" />
-     <Compile Include="Assets\Scripts\Core\View\BallShootAndDraw.cs" />
      <Compile Include="Assets\Scripts\Meta\View\CustomizeBallView.cs" />
      <Compile Include="Assets\Scripts\BaseService\ApplicationService\Service\ApplicationService.cs" />
-     <Compile Include="Assets\Scripts\Core\View\DrawTrajectory.cs" />
      <Compile Include="Assets\Scripts\BaseService\AudioEntity\View\BaseMetaAudioView.cs" />
      <Compile Include="Assets\Scripts\Core\View\ScoreDiamondView.cs" />
      <Compile Include="Assets\Scripts\Meta\AudioEntity\Meta\View\MetaMainThemeView.cs" />
@@ -77,7 +75,6 @@
      <Compile Include="Assets\Scripts\Core\ServiceLayer\DiamondAllScoreServiceLayer.cs" />
      <Compile Include="Assets\Scripts\BaseService\AudioEntity\Model\AudioId.cs" />
      <Compile Include="Assets\Scripts\Utils\InternalData.cs" />
-     <Compile Include="Assets\Scripts\BaseService\RegistryEntity\Service\RegistryMapper.cs" />
      <Compile Include="Assets\Scripts\Meta\AudioEntity\Meta\Service\AudioSwitchServiceLayer.cs" />
      <Compile Include="Assets\Scripts\MVC\Model\IModel.cs" />
      <Compile Include="Assets\Scripts\Meta\View\CanvasAllView.cs" />
@@ -87,15 +84,12 @@
      <Compile Include="Assets\Scripts\Core\View\EndGameView.cs" />
      <Compile Include="Assets\Scripts\Core\View\CreateDiamondView.cs" />
      <Compile Include="Assets\Scripts\Meta\View\VibrationView.cs" />
-     <Compile Include="Assets\Scripts\Meta\View\SoundView.cs" />
-     <Compile Include="Assets\Scripts\BaseService\RegistryEntity\Service\RegistryWriterService.cs" />
      <Compile Include="Assets\Scripts\Core\AudioEntity\ServiceLayer\AttackBallServiceLayer.cs" />
      <Compile Include="Assets\Scripts\Meta\View\ChangeBallView.cs" />
      <Compile Include="Assets\Scripts\Core\ServiceLayer\HowManyScoreServiceLayer.cs" />
      <Compile Include="Assets\Scripts\Meta\ServiceLayer\ChangeBallServiceLayer.cs" />
      <Compile Include="Assets\Scripts\Core\ServiceLayer\EndGameServiceLayer.cs" />
      <Compile Include="Assets\Scripts\Meta\AudioEntity\Meta\View\AudioButtonView.cs" />
-     <Compile Include="Assets\Scripts\Core\ServiceLayer\BallSetPlaceServiceLayer.cs" />
      <Compile Include="Assets\Scripts\Meta\View\BestScoreView.cs" />
      <Compile Include="Assets\Scripts\Core\View\BallView.cs" />
      <Compile Include="Assets\Scripts\BaseService\AudioEntity\Model\AudioPreset.cs" />

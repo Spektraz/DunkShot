@@ -368,12 +368,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e31c1d11867d59418c20b433e44137f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basketType: 2
-  basketSprite: {fileID: 6489848427680274821}
-  transformRot: {fileID: 6489848427224331690}
-  startPos: {fileID: 6489848428033138248}
-  ball: {fileID: 0}
   addScoreBasketView: {fileID: 6079076997263403228}
+  ball: {fileID: 0}
+  transformRot: {fileID: 6489848427224331690}
+  basketSprite: {fileID: 6489848427680274821}
+  basketType: 2
 --- !u!60 &6489848427680274818
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -556,7 +555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce34e23ad86c451469512ea336449733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diamontObject: {fileID: 4658305166719287247}
+  diamondObject: {fileID: 4658305166719287247}
 --- !u!114 &5084743671781868963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,9 +586,9 @@ MonoBehaviour:
   canvas: {fileID: 0}
   shotPoint: {fileID: 6489848428033138248}
   launchForce: 13
-  point: {fileID: 3509040411787396928, guid: 4f865f4c96e26554cb4c599803305839, type: 3}
-  numberOfPoints: 50
   spaceBetweenPoints: 0.01
+  numberOfPoints: 50
+  point: {fileID: 3509040411787396928, guid: 4f865f4c96e26554cb4c599803305839, type: 3}
 --- !u!1 &7314131702361521681
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,7 +19,7 @@ namespace Meta.View
     }
     public class ChangeBallController : Controller<ChangeBallView, ChangeBallServiceLayer>
     {
-        private CustomizeServiceLayer customizeServiceLayer;
+        private readonly CustomizeServiceLayer customizeServiceLayer;
         public ChangeBallController(ChangeBallView view) : base(view)
         {
             customizeServiceLayer = ServiceFactory.GetService<CustomizeServiceLayer>();

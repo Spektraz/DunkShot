@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using BaseService.AudioEntity.Model;
 using MVC.Model;
 using UnityEngine;
@@ -13,22 +12,6 @@ namespace Meta.AudioEntity.Meta.Model
         [SerializeField] private AudioDataList audioDataList;
 
         public AudioPreset GetById(AudioId id) => audioDataList.GetById(id);
-        
-        public List<AudioPreset> GetAudio()
-        {
-            List<AudioPreset> audioPresets = new List<AudioPreset>();
-            foreach (var variable in   audioDataList.Values)
-            {
-                audioPresets.Add(variable);
-            }
-            return audioPresets;
-        }
-
-        public AudioPreset GetById(int id)
-        {
-            AudioId result = (AudioId) id;
-            return GetById((AudioId) id);
-        }
     }
 
     [Serializable]

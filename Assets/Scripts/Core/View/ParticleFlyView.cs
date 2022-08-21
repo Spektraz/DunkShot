@@ -27,8 +27,8 @@ namespace Core.View
 
     public class ParticleFlyController : Controller<ParticleFlyView, AttackBallServiceLayer>
     {
-         private IsAddScoreServiceLayer isAddScoreServiceLayer;
-         private FlyServiceLayer flyServiceLayer;
+         private readonly IsAddScoreServiceLayer isAddScoreServiceLayer;
+         private readonly FlyServiceLayer flyServiceLayer;
         public ParticleFlyController(ParticleFlyView view) : base(view)
         {
             isAddScoreServiceLayer = ServiceFactory.GetService<IsAddScoreServiceLayer>();

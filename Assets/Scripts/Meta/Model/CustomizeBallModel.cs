@@ -1,7 +1,6 @@
 using System;
 using MVC.Model;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Utils;
 
 namespace Meta.Model

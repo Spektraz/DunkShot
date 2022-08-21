@@ -126,4 +126,12 @@ namespace BaseService.RegistryEntity.Service
             PlayerPrefs.DeleteAll();
         }
     }
+    public enum RegistryType
+    {
+        Unset = 0,
+        AudioActiveState = 1,
+        ScoreMax = 2,
+        BuyBalls = 3,
+        ScoreDiamond = 4,
+    }
 }

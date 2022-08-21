@@ -20,8 +20,8 @@ namespace Core.View
 
     public class ScoreDiamondController : Controller<ScoreDiamondView, DiamondTakeServiceLayer>
     {
-        private DiamondAllScoreServiceLayer diamondAllScoreServiceLayer;
-        private ChangeBallServiceLayer changeBallServiceLayer;
+        private readonly DiamondAllScoreServiceLayer diamondAllScoreServiceLayer;
+        private readonly ChangeBallServiceLayer changeBallServiceLayer;
         public ScoreDiamondController(ScoreDiamondView view) : base(view)
         {
             diamondAllScoreServiceLayer = ServiceFactory.GetService<DiamondAllScoreServiceLayer>();

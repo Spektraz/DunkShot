@@ -78,7 +78,6 @@ namespace MVC.Controller
         }
 
         protected abstract void HandleCustomServiceLayer();
-        protected virtual void RemoveCustomServiceLayerListener() => customService.DtoHandler.RemoveListener(HandleCustomServiceLayer);
 
     }
     

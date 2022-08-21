@@ -9,6 +9,7 @@ TagManager:
   - EndRotate
   - BasketCollider
   - Ball
+  - MainCanvas
   layers:
   - Default
   - TransparentFX

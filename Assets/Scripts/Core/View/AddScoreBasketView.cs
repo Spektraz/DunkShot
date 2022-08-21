@@ -15,11 +15,9 @@ namespace Core.View
         }
         public void OnTriggerEnter2D(Collider2D col)
         {
-            if (col.CompareTag("Ball") && collider2D.CompareTag("BasketCollider"))
-            {
-                isGoal = true;
-                Controller.Execute();
-            }
+            if (!col.CompareTag("Ball") || !collider2D.CompareTag("BasketCollider")) return;
+            isGoal = true;
+            Controller.Execute();
         }
         protected override IController CreateController() => new AddScoreBasketController(this);
     }
@@ -27,19 +25,14 @@ namespace Core.View
     {
         private bool isOpen;
         private const int ScoreAdd = 20;
-        private int score;
         public AddScoreBasketController(AddScoreBasketView view) : base(view)
         {
         }
-
         public override void AddListeners()
         {
-       
         }
-
         public override void RemoveListeners()
         {
-        
         }
 
         public override void Execute()
@@ -49,7 +42,6 @@ namespace Core.View
             {
                 ServiceFactory.GetService<IsAddScoreServiceLayer>().UpdateDto(ScoreAdd);
             }
-
             isOpen = true;
         }
     }

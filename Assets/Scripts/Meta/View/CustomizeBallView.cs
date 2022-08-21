@@ -1,15 +1,11 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using BaseService.RegistryEntity.Service;
 using Core.ServiceLayer;
 using Meta.Model;
 using Meta.ServiceLayer;
 using MVC.Controller;
 using MVC.Factory;
-using MVC.View;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Meta.View
@@ -54,14 +50,14 @@ namespace Meta.View
 
     public class CustomizeBallController : Controller<CustomizeBallView, DiamondAllScoreServiceLayer>
     {
+        private readonly CustomizeServiceLayer customizeServiceLayer;
         private int newScore;
-        private CustomizeServiceLayer customizeServiceLayer;
         public CustomizeBallController(CustomizeBallView view) : base(view)
         {
             customizeServiceLayer = ServiceFactory.GetService<CustomizeServiceLayer>();
         }
 
-        public override void AddListeners() // добавить подключение sprite в начале игры
+        public override void AddListeners() 
         {
             View.AddListener(ClickButton);
             View.SetText(customizeServiceLayer.GetBallPriceModel(View.BallName()));
@@ -85,7 +81,6 @@ namespace Meta.View
                        customizeServiceLayer.GetBallPriceModel(View.BallName());
             serviceLayer.UpdateDto(newScore);
             RegistryService.SaveDiamond(newScore);
-        //    RegistryService.SaveBalls();
             View.SetCanvas(false);
             ServiceFactory.GetService<ChangeBallServiceLayer>().UpdateDto(View.BallName());
         }

@@ -31,12 +31,7 @@ namespace Meta.AudioEntity.Meta.Service
 
         public bool GetState(AudioGenreType audioGenreType)
         {
-            if (ContainsKey(audioGenreType))
-            {
-                return AudioStateDictionary[audioGenreType];
-            }
-
-            return false;
+            return ContainsKey(audioGenreType) && AudioStateDictionary[audioGenreType];
         }
 
         private bool ContainsKey(AudioGenreType audioGenreType)
@@ -53,28 +48,11 @@ namespace Meta.AudioEntity.Meta.Service
     public interface IAudioState
     {
         bool IsAudioActive { get; }
-    
-        Dictionary<AudioGenreType, bool> Dictionary { get; }
     }
 
     public class AudioStateImpl : IAudioState
     {
         public bool IsAudioActive { get; }
-
-        private Dictionary<AudioGenreType, bool> dictionary = new Dictionary<AudioGenreType, bool>();
-        public Dictionary<AudioGenreType, bool> Dictionary
-        {
-            get
-            {
-                if (dictionary.Count == 0)
-                {
-                    dictionary.Add(AudioGenreType.Audio, IsAudioActive);
-                }
-    
-                return dictionary;
-            }
-        }
-    
         public AudioStateImpl()
         {
             IsAudioActive = true;

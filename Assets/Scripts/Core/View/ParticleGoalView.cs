@@ -25,7 +25,7 @@ namespace Core.View
 
     public class ParticleGoalController : Controller<ParticleGoalView, IsAddScoreServiceLayer>
     {
-        private AddScoreBasketView addScoreBasketView;
+        private readonly AddScoreBasketView addScoreBasketView;
         public ParticleGoalController(ParticleGoalView view, AddScoreBasketView addScoreBasketView) : base(view)
         {
             this.addScoreBasketView = addScoreBasketView;

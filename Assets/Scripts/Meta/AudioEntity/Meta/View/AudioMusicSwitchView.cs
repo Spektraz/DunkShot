@@ -7,9 +7,6 @@ namespace Meta.AudioEntity.Meta.View
     public class AudioMusicSwitchView : MVC.View.View
     {
         [SerializeField] private AudioButtonView audioButtonView;
-
-        
- 
         protected override IController CreateController() => new AudioSwitchController(this, audioButtonView);
     }
     public class AudioSwitchController : Controller<AudioMusicSwitchView, AudioSwitchServiceLayer>

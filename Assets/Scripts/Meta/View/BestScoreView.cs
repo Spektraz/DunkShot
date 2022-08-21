@@ -19,7 +19,7 @@ namespace Meta.View
 
    public class BestScoreController : Controller<BestScoreView, HowManyScoreServiceLayer>
    {
-      private BestScoreSaveServiceLayer bestScoreSaveServiceLayer;
+      private readonly BestScoreSaveServiceLayer bestScoreSaveServiceLayer;
       public BestScoreController(BestScoreView view) : base(view)
       {
          bestScoreSaveServiceLayer = ServiceFactory.GetService<BestScoreSaveServiceLayer>();

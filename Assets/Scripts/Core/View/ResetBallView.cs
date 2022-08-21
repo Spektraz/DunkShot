@@ -1,4 +1,3 @@
-using System;
 using MVC.Controller;
 using UnityEngine;
 
@@ -6,8 +5,6 @@ namespace Core.View
 {
     public class ResetBallView : MVC.View.View
     {
-        [SerializeField] private Transform startPos;
-        [SerializeField] private Transform ballPos;
         [SerializeField] private Rigidbody2D rigidbody2DBall;
 
         public void OnEnable()
@@ -17,7 +14,6 @@ namespace Core.View
 
         public void SetBall()
         {
-            ballPos = startPos;
             rigidbody2DBall.simulated = false;
         }
 

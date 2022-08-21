@@ -1,9 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using Core.ServiceLayer;
 using MVC.Controller;
-using MVC.View;
 using UnityEngine;
 
 namespace Core.View
@@ -16,14 +12,12 @@ namespace Core.View
 
         public void Update()
         {
-            if (setCamera)
-            {
-                backCanvas.transform.position =
-                    new Vector3(0, (ballTransform.transform.position.y + 50)  * Time.deltaTime);
+            if (!setCamera) return;
+            backCanvas.transform.position =
+                new Vector3(0, (ballTransform.transform.position.y + 50)  * Time.deltaTime);
                 
-                Vector3 interpolatedPosition = Vector3.Lerp(backCanvas.transform.position, ballTransform.transform.position, 100);
-                backCanvas.transform.position = new Vector3(0, interpolatedPosition.y);
-            }
+            Vector3 interpolatedPosition = Vector3.Lerp(backCanvas.transform.position, ballTransform.transform.position, 100);
+            backCanvas.transform.position = new Vector3(0, interpolatedPosition.y);
         }
 
         public void SetCamera(bool state)

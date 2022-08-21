@@ -23,10 +23,5 @@ namespace MVC.Model
                 return dictionary;
             }
         }
-        public bool HasKey(Id id) => Dictionary.ContainsKey(id);
-        public Dictionary<Id, InternalValue>.KeyCollection Keys => Dictionary.Keys;
-        public Dictionary<Id, InternalValue>.ValueCollection Values => Dictionary.Values;
-
-        public List<Id> Ids => Dictionary.Keys.ToList();
     }
 }

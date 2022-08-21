@@ -21,6 +21,4 @@ namespace Meta.AudioEntity.Meta.View
             vibrationSlider.onValueChanged.RemoveAllListeners();
         }
     }
-
- 
 }
