@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99afab1d717b3a24faa37ce8f40d37bc, type: 3}
+  m_Name: CustomizeBallModel
+  m_EditorClassIdentifier: 
+  buyBallsList:
+    list:
+    - id: 0
+      value:
+        ballSprite: {fileID: -3895717936736228326, guid: 125275f95e6b2d241856ad4643235e7e,
+          type: 3}
+        priceBall: 0
+    - id: 1
+      value:
+        ballSprite: {fileID: -7565889955009460685, guid: 1ffc9b7f47475e14c948635721f07e44,
+          type: 3}
+        priceBall: 5
+    - id: 2
+      value:
+        ballSprite: {fileID: -5592626445435087675, guid: 97dc3409bd0d6f743b9b8aaea398a075,
+          type: 3}
+        priceBall: 100
+    - id: 3
+      value:
+        ballSprite: {fileID: -7565889955009460685, guid: 94722f6769a39c049a9245d0fa393779,
+          type: 3}
+        priceBall: 200
+    - id: 4
+      value:
+        ballSprite: {fileID: -7565889955009460685, guid: b076bcfc68a773f43a81be8e674596f8,
+          type: 3}
+        priceBall: 300
+    - id: 5
+      value:
+        ballSprite: {fileID: -7565889955009460685, guid: f27a3325eafb0614e9b5fe4afa35d7db,
+          type: 3}
+        priceBall: 400
+    - id: 6
+      value:
+        ballSprite: {fileID: -7565889955009460685, guid: 9774877ae46b5a7428a198094b6b629f,
+          type: 3}
+        priceBall: 500
+    - id: 7
+      value:
+        ballSprite: {fileID: -7565889955009460685, guid: ce880da8d27c81d43b21f871c9d85f61,
+          type: 3}
+        priceBall: 600
+    - id: 8
+      value:
+        ballSprite: {fileID: -7565889955009460685, guid: e333790a3c23d864f9494faf711ff5dd,
+          type: 3}
+        priceBall: 700
+    - id: 9
+      value:
+        ballSprite: {fileID: -7565889955009460685, guid: c4fdcd184f95d25478408b8ea13a2434,
+          type: 3}
+        priceBall: 800
+    - id: 10
+      value:
+        ballSprite: {fileID: -7565889955009460685, guid: 82ee9d095820c044e8dfa0b6643c9760,
+          type: 3}
+        priceBall: 900
+    - id: 11
+      value:
+        ballSprite: {fileID: -7565889955009460685, guid: 971aa6ca591a6f84aa4406c9ddfe2892,
+          type: 3}
+        priceBall: 1000

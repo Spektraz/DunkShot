@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Room
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 65
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -3895717936736228326, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: -9042753861289356049, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 5850580685272913183, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 1112765196183922992, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 3093003201808626538, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 805638179216316430, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 8770681531563001588, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 8936320602237543532, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 3262565736642199600, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: -5911362565437930002, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: -5592626445435087675, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: -4304011265874082694, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 4728945798798409766, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 4432719408381914810, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 4335663387636567223, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 4621627604646319094, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 6538749169143049870, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 2476664988860976592, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 4338157070937926510, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: -8374646185895321449, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: -6881782187760526604, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 2756530204662857115, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: -5477766415678613196, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 5344986243013511499, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 6883936915835726399, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 3478593384012502822, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: -7565889955009460685, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: -164078705687855570, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 3260679820814268145, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: -1584958215128240351, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  - {fileID: 3603055554220619296, guid: 971aa6ca591a6f84aa4406c9ddfe2892, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - ball0053
+  - ball0052
+  - ball0051
+  - ball0050
+  - ball0057
+  - ball0056
+  - ball0055
+  - ball0054
+  - ball0060
+  - ball0059
+  - ball0058
+  - ball0040
+  - ball0041
+  - ball0042
+  - ball0043
+  - ball0044
+  - ball0045
+  - ball0035
+  - ball0046
+  - ball0034
+  - ball0047
+  - ball0037
+  - ball0048
+  - ball0036
+  - ball0049
+  - ball0031
+  - ball0030
+  - ball0033
+  - ball0032
+  - ball0039
+  - ball0038
+  m_Tag: Room
+  m_IsVariant: 0
